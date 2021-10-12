@@ -1,0 +1,23 @@
+class Coin
+{
+  boolean heads;
+  String sheads;
+  int myX, myY, mySize;
+  Coin(int x, int y) {
+    myX = x; myY = y; mySize = 50;
+  }
+  Coin(int x, int y,int size) {
+    myX = x; myY = y; mySize = size;
+  }
+  void flip() {
+    heads = (Math.random() >= 0.5)?true:false;
+    sheads = (heads == true)?"Heads":"Tails";
+  }
+  void conFlip() {
+    heads = (Math.random() >= 0.85)?true:false;
+    sheads = (heads == true)?"Heads":"Tails";
+  }
+  void show() {
+     fill(255);
+     ellipse(myX,myY,mySize,mySize);
+     fill(0);
