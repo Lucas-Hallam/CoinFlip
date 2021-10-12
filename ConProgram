@@ -1,0 +1,21 @@
+Coin bob_1; Coin bob_2; Coin bob_3; Coin bob_4; Coin bob_5;
+void setup() {
+  size(500,500);
+  noLoop();
+}
+void draw(){
+  bob_1 = new Coin(250,250,100);
+  bob_1.conflip();
+  bob_1.show();
+  textAlign(CENTER, CENTER);
+  bob_2 = new Coin(400,250,100);
+  bob_2.conflip();
+  bob_2.show();
+  textAlign(CENTER, CENTER);
+  bob_3 = new Coin(100,250,100);
+  bob_3.conflip();
+  bob_3.show();
+  textAlign(CENTER, CENTER);
+  bob_4 = new Coin(250,100,100);
+  bob_4.conflip();
+  bob_4.show();
