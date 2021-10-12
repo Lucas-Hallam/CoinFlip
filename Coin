@@ -13,7 +13,7 @@ class Coin
     heads = (Math.random() >= 0.5)?true:false;
     sheads = (heads == true)?"Heads":"Tails";
   }
-  void conFlip() {
+  void conflip() {
     heads = (Math.random() >= 0.85)?true:false;
     sheads = (heads == true)?"Heads":"Tails";
   }
